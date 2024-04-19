@@ -2,17 +2,8 @@ import { Schema, model } from "mongoose";
 
 const socketSchema = new Schema(
   {
-    servoMotor: {
-      type: Boolean,
-      default: false,
-    },
-    led: {
-      type: Boolean,
-      default: false,
-    },
-    dht11: {
-      type: Boolean,
-      default: false,
+    distance: {
+      type: Number,
     },
     temperature: {
       type: Number 
@@ -26,7 +17,7 @@ const socketSchema = new Schema(
     hour: {
       type: String, 
     },
-    status: {
+    ledStatus: {
       type: Boolean,
     },
   },
